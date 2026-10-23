@@ -1,0 +1,76 @@
+
+.reportes {
+  margin-top: 24px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.reportes h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.reportes > p {
+  color: #6b7280;
+}
+
+.reportes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.reporte-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+.reporte-card span {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.reporte-card strong {
+  color: #111827;
+  font-size: 24px;
+  overflow-wrap: anywhere;
+}
+
+.reporte-tabla {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.reporte-tabla table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reporte-tabla th,
+.reporte-tabla td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.reporte-tabla th {
+  background: #f3f4f6;
+}
+
+@media (max-width: 600px) {
+  .reportes {
+    padding: 16px;
+  }
+
+  .reporte-card strong {
+    font-size: 20px;
+  }
+}
